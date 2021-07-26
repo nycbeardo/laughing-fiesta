@@ -1,0 +1,152 @@
+* { 
+    background-color: white;
+   
+
+}
+
+
+
+
+div.box1 {
+      width: 300px;
+      height: 500px;
+  
+  background-color: antiquewhite;
+  padding: 50px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.6);
+  border-radius: 20px;
+}
+
+div.box2 { 
+width: 100px;
+height: 100px;
+  
+  box-shadow: 0 0 1rem rgba(0,0,0,0.6);
+  border-radius: 50%;
+  padding: 50px;
+  margin: auto;
+  margin-top: 10%;
+  left: 0%;
+  position: relative;
+
+
+}
+
+div.box2:hover { 
+    top: 30px;
+    box-shadow: -3px -3px 7px #999999a9, -3px -3px 12px #e9e9e9a9, 3px 3px 7px #999999a9, -3px -3px 12px #e9e9e9a9;
+    animation: uplift 0.1s 1 linear;
+}
+
+div.box2:not(:hover) {
+        animation: downlift 0.1s 1 linear;
+        
+}
+
+@keyframes uplift {
+    0% {
+        top: 40px;
+    }
+  
+    25% {
+        top: 37.5px;
+    }
+  
+    50% {
+        top: 35px;
+    }
+  
+    75% {
+        top: 32.5px;
+    }
+  
+    100% {
+        top: 30px;
+    }
+}
+  
+@keyframes downlift {
+    0% {
+        box-shadow: -3px -3px 7px #999999a9,
+            -3px -3px 12px #e9e9e9a9,
+            3px 3px 7px #999999a9,
+            -3px -3px 12px #e9e9e9a9;
+        top: 30px;
+    }
+  
+    25% {
+        box-shadow: -3px -3px 7px #b3b3b3a9,
+            -3px -3px 12px #e9e9e9a9,
+            3px 3px 7px #b3b3b3a9,
+            -3px -3px 12px #e9e9e9a9;
+        top: 32.5px;
+    }
+  
+    50% {
+        top: 35px;
+        box-shadow: -3px -3px 7px #d6d6d6a9,
+            -3px -3px 12px #e9e9e9a9,
+            3px 3px 7px #d6d6d6a9,
+            -3px -3px 12px #e9e9e9a9;
+    }
+  
+    75% {
+        top: 37.5px;
+        box-shadow: -3px -3px 7px #f3f3f3a9,
+            -3px -3px 12px #e9e9e9a9,
+            3px 3px 7px #f3f3f3a9,
+            -3px -3px 12px #e9e9e9a9;
+    }
+  
+    100% {
+        box-shadow: -3px -3px 7px #e9e9e9a9,
+            3px 3px 7px #e9e9e9a9;
+        top: 40px;
+    }
+}
+
+div.box3 { 
+    
+   
+    overflow: hidden;
+    text-align: center;
+    width: 200px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 30%;
+    left: 0%;
+    right: 0%;
+    position: absolute;
+    background-color: antiquewhite;
+
+
+}
+
+div.box3 input {
+   
+    width: 50px;
+    font-size: 20px;
+    color: seashell;
+    text-align: center;
+    opacity: 0.7;
+    border: none;
+    border-radius: 4px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+#red {
+    background-color: red;
+    
+}
+  
+#green {
+    background-color: green;
+    
+}
+  
+#blue {
+    background-color: blue;
+    
+}
